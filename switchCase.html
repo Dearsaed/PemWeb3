@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contoh Program Javascript</title>
+  </head>
+  <script language="javascript">
+    function test() {
+      //deklarasi variabel
+      val1 = window.prompt("Nilai (1-5): ")
+      //pengkondisian switch
+      switch (val1) {
+        //jika nilai val1 = "1"
+        case "1":
+        document.write("Bilangan Satu")
+        break
+        //jika nilai val1 = "2"
+        case "2":
+        document.write("Bilangan Dua")
+        break
+        //jika nilai val1 = "3"
+        case "3":
+        document.write("Bilangan Tiga")
+        break
+        //jika nilai val1 = "4"
+        case "4":
+        document.write("Bilangan Empat")
+        break
+        //jika nilai val1 = "5"
+        case "5":
+        document.write("Bilangan Lima")
+        break
+        //jika tidak ada kondisi yang terpenuhi
+        default:
+        document.write("Bilangan Lainnya")
+      }
+    }
+  </script>
+  <body>
+    <!--pemanggilan function test()-->
+    <input type="button" name="button1" value="switch" onclick=test()>
+  </body>
+</html>

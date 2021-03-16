@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kalkulator Program Javascript</title>
+  </head>
+  <script language="javascript">
+    //menunjukkan waktu terakhir modifikasi
+    document.write("Dimodifikasi terakhir pada "+ document.lastModified);
+    // function kalkulator
+    function tambah(){
+      var a = parseInt(document.hitung.angka1.value);
+      var b = parseInt(document.hitung.angka2.value);
+      var sum=a+b;
+      document.hitung.total.value=sum.toString();
+    }
+    function kurang(){
+      var a = parseInt(document.hitung.angka1.value);
+      var b = parseInt(document.hitung.angka2.value);
+      var sum=a-b;
+      document.hitung.total.value=sum.toString();
+    }
+    function kali(){
+      var a = parseInt(document.hitung.angka1.value);
+      var b = parseInt(document.hitung.angka2.value);
+      var sum=a*b;
+      document.hitung.total.value=sum.toString();
+    }
+    function bagi(){
+      var a = parseInt(document.hitung.angka1.value);
+      var b = parseInt(document.hitung.angka2.value);
+      var sum=a/b;
+      document.hitung.total.value=sum.toString();
+    }
+  </script>
+  <body>
+
+    <form method="post" name="hitung">
+      <!-- inputan -->
+      <p>Bil1 :<input type="text" name="angka1" size="20"> Bil2 :<input type="text" name="angka2" size="20"></p>
+      <!-- hasil eksekusi -->
+      <p>Hasil :<input type="text" name="total" size="20"></p>
+      <!--tombol kalkulator-->
+      <input type="button" value="+" onclick=tambah()>
+      <input type="button" value="-" onclick=kurang()>
+      <input type="button" value="*" onclick=kali()>
+      <input type="button" value="/" onclick=bagi()>
+    </form>
+
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Latihan 1</title>
+  </head>
+  <body>
+    <script language="javascript">
+      //user memasukkan nilai
+      nilai = window.prompt("Nilai (0-100): ");
+      //deklarasi function
+      function penilai(){
+        //pengkondisian if else
+        if(nilai<0) //agar tidak ada nilai negatif
+          document.write("Nilai Tidak Valid")
+        if(nilai>40)
+          if(nilai>55)
+            if(nilai>60)
+              if(nilai>65)
+                if(nilai>70)
+                  if (nilai>80)
+                    if(nilai<=100)
+                    document.write("A")
+                    else
+                    document.write("Nilai Tidak Valid") //untuk nilai >100
+                  else
+                  document.write("AB")
+                else
+                  document.write("B")
+              else
+                document.write("BC")
+            else
+              document.write("C")
+          else
+            document.write("D")
+        else if(nilai>=0)
+          document.write("E")
+      }
+    </script>
+    <!--tombol menjalankan function penilai()-->
+    <p><input type="button" value="Nilai" onclick=penilai()></p>
+  </body>
+</html>

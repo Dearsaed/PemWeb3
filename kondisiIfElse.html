@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contoh Program Javascript</title>
+  </head>
+  <script language="javascript">
+    //deklarasi function test, untuk dipanggil di bagian body
+    function test ()
+    {
+      val1=window.prompt("Nilai I :")
+      val2=window.prompt("Nilai II :")
+    //menuliskan kalimat persamaan val1 dan val2
+    document.write("<br>"+"val1==val2"+"<br>")
+    //mengeksekusi perintah persamaan
+    document.write(val1==val2)
+    //menuliskan kalimat pertidaksamaan val1 dan val2
+    document.write("<br>"+"val1!=val2"+"<br>")
+    //mengeksekusi perintah pertidaksamaan
+    document.write(val1!=val2)
+    //menuliskan kalimat pertidaksamaan val1 dan val2
+    document.write("<br>"+"val1&gtval2"+"<br>")
+    //mengeksekusi perintah pertidaksamaan
+    document.write(val1>val2)
+    //menuliskan kalimat pertidaksamaan val1 dan val2
+    document.write("<br>"+"val1&ltval2"+"<br>")
+    //mengeksekusi perintah pertidaksamaan
+    document.write(val1<val2)
+    }
+  </script>
+  <body>
+    <!-- memanggil function test dengan button -->
+    <input type="button" name="button1" value="relational1" onclick=test() >
+  </body>
+</html>
